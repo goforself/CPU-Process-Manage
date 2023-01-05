@@ -1,17 +1,18 @@
-¸ù¾ÝCÓïÑÔÄ£ÄâFCFS£¨ÏÈÀ´ÏÈ·þÎñ£©£¬SJF£¨¶Ì×÷ÒµÓÅÏÈ£©£¬HRRF£¨¸ßÏìÓ¦±ÈÓÅÏÈ£©£¬RR£¨Ê±¼äÆ¬ÂÖ×ª£©Ëã·¨ÊµÏÖCPUµÄ½ø³Ìµ÷¶È
+## æ ¹æ®Cè¯­è¨€æ¨¡æ‹Ÿ:
+FCFSï¼ˆå…ˆæ¥å…ˆæœåŠ¡ï¼‰ï¼ŒSJFï¼ˆçŸ­ä½œä¸šä¼˜å…ˆï¼‰ï¼ŒHRRFï¼ˆé«˜å“åº”æ¯”ä¼˜å…ˆï¼‰ï¼ŒRRï¼ˆæ—¶é—´ç‰‡è½®è½¬ï¼‰ç®—æ³•å®žçŽ°CPUçš„è¿›ç¨‹è°ƒåº¦
 
-Êý¾ÝÀàÐÍ£º
-PCBpool£ºpcb[]
+## æ•°æ®ç±»åž‹ï¼š
+PCBpoolï¼špcb[]
 PCBqueue: Queue{pcb *front,pcb* tail}
 CPU: pcb*
 
-ÊµÏÖË¼Â·£º
-1.³ÌÐòÆô¶¯Ê±£¬Í¨¹ý¶ÁÈ¡process.txtÎÄ¼þ»ñµÃËùÓÐ½ø³ÌÐÅÏ¢£¬¶ÁÈëÔ¤±¸Êý×éPCBpool
-2.Í¨¹ýwhile£¨true£©Ñ­»·ºÍnow_time++Ä£ÄâÊ±¼äÁ÷ÊÅ£¬ÔÚÃ¿´ÎÊ±¼äÁ÷ÊÅÒ»¸öµ¥Î»Ê±£¬¼ì²éÊý×éPCBpool£¬¼ÓÔØµ½´ïµÄ½ø³Ìµ½¾ÍÐ÷¶ÓÁÐPCBqueue
-3.Ã¿´ÎÊ±¼äÁ÷ÊÅÒ»¸öµ¥Î»Ê±£¬Èç¹ûCPU¿ÕÏÐ²¢ÇÒ¾ÍÐ÷¶ÓÁÐ²»Îª¿Õ£¬Ôò¸ù¾Ý¾ßÌåËã·¨ÔÚPCBqueueÖÐÕÒµ½Ò»¸öºÏÊÊµÄ½ø³Ì×°ÔØµ½CPUÉÏ
-4.Èç¹ûCPU¿ÕÏÐ²¢ÇÒ¾ÍÐ÷¶ÓÁÐÎª¿Õ£¬Ôòbreak³öwhileÑ­»·
-×îÖÕ³ÌÐòµÄÔËÐÐ½á¹û°´ÔËÐÐ½áÊøµÄÏÈºóË³ÐòÊä³ö
+## å®žçŽ°æ€è·¯ï¼š
+1.ç¨‹åºå¯åŠ¨æ—¶ï¼Œé€šè¿‡è¯»å–process.txtæ–‡ä»¶èŽ·å¾—æ‰€æœ‰è¿›ç¨‹ä¿¡æ¯ï¼Œè¯»å…¥é¢„å¤‡æ•°ç»„PCBpool
+2.é€šè¿‡whileï¼ˆtrueï¼‰å¾ªçŽ¯å’Œnow_time++æ¨¡æ‹Ÿæ—¶é—´æµé€ï¼Œåœ¨æ¯æ¬¡æ—¶é—´æµé€ä¸€ä¸ªå•ä½æ—¶ï¼Œæ£€æŸ¥æ•°ç»„PCBpoolï¼ŒåŠ è½½åˆ°è¾¾çš„è¿›ç¨‹åˆ°å°±ç»ªé˜Ÿåˆ—PCBqueue
+3.æ¯æ¬¡æ—¶é—´æµé€ä¸€ä¸ªå•ä½æ—¶ï¼Œå¦‚æžœCPUç©ºé—²å¹¶ä¸”å°±ç»ªé˜Ÿåˆ—ä¸ä¸ºç©ºï¼Œåˆ™æ ¹æ®å…·ä½“ç®—æ³•åœ¨PCBqueueä¸­æ‰¾åˆ°ä¸€ä¸ªåˆé€‚çš„è¿›ç¨‹è£…è½½åˆ°CPUä¸Š
+4.å¦‚æžœCPUç©ºé—²å¹¶ä¸”å°±ç»ªé˜Ÿåˆ—ä¸ºç©ºï¼Œåˆ™breakå‡ºwhileå¾ªçŽ¯
+5.æœ€ç»ˆç¨‹åºçš„è¿è¡Œç»“æžœæŒ‰è¿è¡Œç»“æŸçš„å…ˆåŽé¡ºåºè¾“å‡º
 
-Êä³ö£º
-±¾À´´òËãÊä³öµ½ÎÄ¼þÖÐ£¬µ«ÊÇÓÉÓÚÊ±¼ä¹ØÏµÃ»ÓÐÍê³É£¬Ö»ÄÜ²ÉÓÃÖÕ¶ËÊä³ö
-ÏÈÊä³öµ÷¶ÈÐòÁÐ£¬ÔÙÒÀ´ÎÊä³ö½ø³ÌµÄÐÅÏ¢
+## è¾“å‡ºï¼š
+1.æœ¬æ¥æ‰“ç®—è¾“å‡ºåˆ°æ–‡ä»¶ä¸­ï¼Œä½†æ˜¯ç”±äºŽæ—¶é—´å…³ç³»æ²¡æœ‰å®Œæˆï¼Œåªèƒ½é‡‡ç”¨ç»ˆç«¯è¾“å‡º
+2.å…ˆè¾“å‡ºè°ƒåº¦åºåˆ—ï¼Œå†ä¾æ¬¡è¾“å‡ºè¿›ç¨‹çš„ä¿¡æ¯
